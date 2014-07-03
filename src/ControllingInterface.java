@@ -42,7 +42,7 @@ public class ControllingInterface {
 				iteration++;
 				System.out.println("Total time so far: " + (System.currentTimeMillis() - time) + "\n");
 				Tone.sound(7000, 100, 1.0);
-			} while (csc.getNumberOfSquares() > 0);
+			} while (csc.getNumberOfSquares() > 2);
 			if(model.getRet() == 0) {
 				System.out.println("Solution found.");
 				ec = new EdgeCounter("models/" + nVertices + "/mat" + (iteration - 1) + ".dat");

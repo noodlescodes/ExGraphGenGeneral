@@ -221,7 +221,7 @@ public class Model {
 					row[j++] = 1;
 				}
 			}
-			lp.addConstraintex(j, row, colno, LpSolve.LE, 90);
+			lp.addConstraintex(j, row, colno, LpSolve.LE, 89);
 			// ---end experimental constraints---
 
 			if (VERBOSE) {

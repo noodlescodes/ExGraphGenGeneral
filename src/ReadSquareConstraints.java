@@ -8,6 +8,7 @@ public class ReadSquareConstraints {
 	private int[][][] constraints;
 
 	public ReadSquareConstraints(String file) {
+		numberOfConstraints = 0;
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(file));
 			String line;
@@ -35,5 +36,12 @@ public class ReadSquareConstraints {
 	
 	public int[][][] getConstraints() {
 		return constraints;
+	}
+	
+	public int getNumberConstraints() {
+		if(constraints == null) {
+			return 0;
+		}
+		return constraints.length;
 	}
 }
